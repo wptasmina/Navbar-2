@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-image: url(./bg.jpg);
+}
+
+.navbar{
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    margin: auto;
+}
+.logo a {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.logo a span {
+    color: crimson;
+}
+.menu li {
+    display: inline-block;
+}
+.menu li a{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    color: #fff;
+    transition: all 0.5s ease;
+    position: relative;
+}
+.menu li a:hover{
+    color: crimson;
+}
+.menu li a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: #f33e3e;
+    width: 0;
+    height: 2.5px;
+    transition: all 0.5s ease;
+}
+.menu li a:hover::before {
+    width: 100%;
+}
+
+
